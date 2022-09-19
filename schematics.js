@@ -123,8 +123,8 @@ function handleFiles() {
                     for (let i = 0; i < entities.length; i++) {
                         const entity = entities[i];
                         let posX = Math.round((entity.Pos[0] + tag.WEOriginX) * 10) / 10;
-                        let posY = Math.round((entity.Pos[1] + tag.WEOriginX) * 10) / 10;
-                        let posZ = Math.round((entity.Pos[2] + tag.WEOriginX) * 10) / 10;
+                        let posY = Math.round((entity.Pos[1] + tag.WEOriginY) * 10) / 10;
+                        let posZ = Math.round((entity.Pos[2] + tag.WEOriginZ) * 10) / 10;
                         if (entity["Item"]) {
                             const item = entity["Item"];
                             pushItem(entityItems, item, entity.id + ": /tppos " + posX + " " + posY + " " + posZ);
